@@ -228,7 +228,7 @@ h1.secTitle {
 }
 
 /* responsive */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .bgPic{
         background: url(img/bg_team2.png);
         background-size: cover;
@@ -238,4 +238,10 @@ h1.secTitle {
         width: 100%;
         position: fixed;
     } 
+
+    .circ_bg{
+        background-size: cover;
+        width: 100vw;
+        height: 600px;
+    }
 }
