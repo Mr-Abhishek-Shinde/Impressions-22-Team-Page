@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backdrop-filter: blur(3px); */
+    background-color: #00000004;
+    color: white;
+}
+
+.bgPic{
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    background: url(img/bg_team1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: brightness(97%);
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainContainer h1.mainTitle {
+    font-size: 90px;
+    margin-bottom: 15px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    text-shadow:
+        0 -1px 0 #fff,
+        0 1px 0 #2e2e2e,
+        0 2px 0 #2c2c2c,
+        0 3px 0 #282828,
+        0 4px 0 #242424;
+}
+
+h1.secTitle {
+    font-size: 45px;
+    font-weight: 700;
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.teamSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.logo {
+    position: fixed;
+    max-width: 13vw;
+    max-height: 9vh;
+    left: 15px;
+    top: 4px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .teamSection .card {
+        margin: 15px 15px;
+    }
+
+    .logo {
+        position: relative;
+        max-width: 50vw;
+        max-height: 12vh;
+        margin-bottom: 15px;
+    }
+
+    .main1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .MainContainer h1.mainTitle {
+        font-size: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    .logo {
+        position: relative;
+        max-width: 50vw;
+        max-height: 11vh;
+        margin-bottom: 12px;
+    }
+
+    .main1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .MainContainer h1.mainTitle {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    .sectionDiv {
+        margin-bottom: 120px;
+        margin-top: 50px;
+    }
+}
+
+
+
+/* new cards */
+
+.circ_bg{
+    position: relative;
+    /* background: url(img/frame\(glow\).png); */
+    background: url(img/frame\(Without\ glow\).png);
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 26px;
+    padding-left: 32px;
+    margin-left: -32px;
+    margin-top: -80px;
+    overflow: hidden;
+}
+
+.circ_bg img.picon{
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+}
+
+.infoo{
+    margin-top: -135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.infoo h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
+.infoo h2{
+    text-align: center;
+    font-size: 20px;
+}
+.sMedia{
+    position: absolute;
+    width: 242px;
+    height: 242px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* top: 100%; */
+    transition: all 0.5s ease;
+    opacity: 0;
+    top: 164px;
+}
+
+.sMedia>div{
+    padding-top: 20px;
+}
+
+.circ_bg img.sicons{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-top: 100px;
+}
+
+.circ_bg img.sicons:hover{
+    border: 3px solid rgb(134, 3, 134);
+}
+
+.cardd{
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cardd:hover .sMedia{
+    /* top: 165px; */
+    opacity: 1;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+    .bgPic{
+        background: url(img/bg_team2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+    } 
+}
