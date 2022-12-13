@@ -9,6 +9,17 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #060e1b;
+}
+
+#canvas {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
 main {
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,8 +27,8 @@ main {
     background-color: #00000004;
     color: white;
 }
-
-.bgPic{
+/* 
+.bgPic {
     position: fixed;
     z-index: -1;
     height: 100vh;
@@ -27,7 +38,7 @@ main {
     background-repeat: no-repeat;
     background-position: center center;
     filter: brightness(97%);
-}
+} */
 
 .MainContainer {
     display: flex;
@@ -41,7 +52,8 @@ main {
     margin-bottom: 15px;
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
+    color: white;
     text-shadow:
         0 -1px 0 #fff,
         0 1px 0 #2e2e2e,
@@ -55,7 +67,8 @@ h1.secTitle {
     font-weight: 700;
     /* font-family: 'Courgette', cursive; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
 .teamSection {
@@ -84,6 +97,11 @@ h1.secTitle {
     top: 4px;
     object-fit: contain;
     cursor: pointer;
+}
+
+.card{
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 @media (max-width: 1100px) {
@@ -141,55 +159,59 @@ h1.secTitle {
 
 /* new cards */
 
-.circ_bg{
+.circ_bg {
     position: relative;
     /* background: url(img/frame\(glow\).png); */
-    background: url(img/frame\(Without\ glow\).png);
+    background: url(img/frame3.png);
     background-size: contain;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 26px;
-    padding-left: 32px;
+    padding-bottom: 12px;
+    padding-left: 13px;
     margin-left: -32px;
-    margin-top: -80px;
+    margin-top: -90px;
     overflow: hidden;
 }
 
-.circ_bg img.picon{
-    width: 242px;
-    height: 242px;
+.circ_bg img.picon {
+    width: 255px;
+    height: 255px;
     border-radius: 50%;
+    border: 2px solid black;
 }
 
-.infoo{
-    margin-top: -135px;
+.infoo {
+    margin-top: -120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: black;
+    /* color: black; */
+    color: white;
 }
 
-.infoo h1{
+.infoo h1 {
     text-align: center;
     font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
 }
-.infoo h2{
+
+.infoo h2 {
     text-align: center;
     font-size: 20px;
 }
-.sMedia{
+
+.sMedia {
     position: absolute;
-    width: 242px;
-    height: 242px;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 255px;
+    height: 255px;
+    background-color: rgba(0, 0, 0, 0.75);
     z-index: 100;
     border-radius: 50%;
     display: flex;
@@ -198,14 +220,14 @@ h1.secTitle {
     /* top: 100%; */
     transition: all 0.5s ease;
     opacity: 0;
-    top: 164px;
+    top: 140px;
 }
 
-.sMedia>div{
+.sMedia>div {
     padding-top: 20px;
 }
 
-.circ_bg img.sicons{
+.circ_bg img.sicons {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -213,35 +235,52 @@ h1.secTitle {
     margin-top: 100px;
 }
 
-.circ_bg img.sicons:hover{
+.circ_bg img.sicons:hover {
     border: 3px solid rgb(134, 3, 134);
 }
 
-.cardd{
+.cardd {
     cursor: pointer;
     overflow: hidden;
 }
 
-.cardd:hover .sMedia{
+.cardd:hover .sMedia {
     /* top: 165px; */
     opacity: 1;
 }
 
 /* responsive */
 @media (max-width: 600px) {
-    .bgPic{
-        background: url(img/bg_team2.png);
+    .circ_bg {
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-    } 
-
-    .circ_bg{
-        background-size: cover;
+        height: 480px;
         width: 100vw;
-        height: 600px;
+    padding-left: 18px;
+    padding-bottom: 16px;
+
+    }
+    .circ_bg img.picon {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 2px solid black;
+    }
+
+    .infoo {
+        margin-top: -100px;
+    }
+
+    .card{
+        padding-bottom: 40px;
+    }
+
+    .teamSection{
+        margin-top: 20px;
+    }
+
+    .sMedia {
+        width: 220px;
+        height: 220px;
+        top: 120px;
     }
 }
