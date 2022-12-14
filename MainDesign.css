@@ -67,7 +67,7 @@ h1.secTitle {
     font-size: 45px;
     font-weight: 700;
     /* font-family: 'Courgette', cursive; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* color: black; */
     color: white;
     width: 100%;
@@ -176,7 +176,7 @@ h1.secTitle {
     justify-content: center;
     padding-bottom: 12px;
     padding-left: 13px;
-    margin-left: -32px;
+    margin-left: -10px;
     margin-top: -90px;
     overflow: hidden;
 }
@@ -250,6 +250,10 @@ h1.secTitle {
     overflow: hidden;
 }
 
+.cardd:hover .sMedia {
+    /* top: 165px; */
+    opacity: 1;
+}
 .cardd:hover .sMedia {
     /* top: 165px; */
     opacity: 1;
