@@ -27,6 +27,7 @@ main {
     background-color: #00000004;
     color: white;
 }
+
 /* 
 .bgPic {
     position: fixed;
@@ -69,6 +70,8 @@ h1.secTitle {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* color: black; */
     color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .teamSection {
@@ -85,7 +88,7 @@ h1.secTitle {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-top: 100px;
 }
 
@@ -99,7 +102,7 @@ h1.secTitle {
     cursor: pointer;
 }
 
-.card{
+.card {
     margin-bottom: 20px;
     margin-top: 10px;
 }
@@ -150,7 +153,7 @@ h1.secTitle {
     }
 
     .sectionDiv {
-        margin-bottom: 120px;
+        margin-bottom: 80px;
         margin-top: 50px;
     }
 }
@@ -183,6 +186,7 @@ h1.secTitle {
     height: 255px;
     border-radius: 50%;
     border: 2px solid black;
+    user-select: none;
 }
 
 .infoo {
@@ -193,6 +197,7 @@ h1.secTitle {
     justify-content: center;
     /* color: black; */
     color: white;
+    user-select: none;
 }
 
 .infoo h1 {
@@ -218,9 +223,10 @@ h1.secTitle {
     align-items: center;
     justify-content: center;
     /* top: 100%; */
-    transition: all 0.5s ease;
+    transition: all 0.45s ease;
     opacity: 0;
     top: 140px;
+    user-select: none;
 }
 
 .sMedia>div {
@@ -255,10 +261,11 @@ h1.secTitle {
         background-size: cover;
         height: 480px;
         width: 100vw;
-    padding-left: 18px;
-    padding-bottom: 16px;
+        padding-left: 18px;
+        padding-bottom: 16px;
 
     }
+
     .circ_bg img.picon {
         width: 220px;
         height: 220px;
@@ -270,11 +277,11 @@ h1.secTitle {
         margin-top: -100px;
     }
 
-    .card{
+    .card {
         padding-bottom: 40px;
     }
 
-    .teamSection{
+    .teamSection {
         margin-top: 20px;
     }
 
